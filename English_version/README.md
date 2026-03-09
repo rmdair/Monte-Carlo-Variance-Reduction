@@ -1,42 +1,67 @@
-<div align="center">
-  <h1> Variance Reduction Methods </h1>
-</div>
+<h1 align="center">Variance Reduction in Monte Carlo Simulations</h1>
 
-## Overview  
-Monte Carlo simulations are powerful tools for estimating complex probabilistic quantities, but they often suffer from **high variance**, which can limit their efficiency, particularly in the study of **rare events**. This project explores three major **variance reduction methods** to improve estimation accuracy while reducing computational cost:
+---
 
-1. **Importance Sampling (IS)**: Adjusts the sampling distribution to better capture rare events.
-2. **Control Variates (CV)**: Exploits correlations between random variables to reduce the variance of the estimator.
-3. **Stratification (ST)**: Segments the sampling space into homogeneous groups to refine estimations.
+<p align="center">
+  <img src="https://img.shields.io/badge/R_Language-276DC3?style=flat-square&logo=R" alt="R">
+  <img src="https://img.shields.io/badge/License-MIT-darkgreen?style=flat-square" alt="License">
+</p>
 
-The theoretical approach is complemented by a **real-world application in sports analytics**, where we evaluate the probability of an exceptional score in a match involving LOSC (Lille Olympique Sporting Club).
+<p align="center">
+  <img src="../assets/banner.webp" alt="Banner" width="60%">
+</p>
 
-## Report Contents  
-The report covers the following aspects:
-- **Theoretical foundations of Monte Carlo simulations**.
-- **Detailed presentation of variance reduction methods**.
-- **Mathematical demonstrations of key properties**.
-- **Performance comparison of the methods in practical cases**.
-- **Application to LOSC match data to estimate the probability of winning by at least 8 goals**.
+Monte Carlo simulations are powerful tools for estimating complex probabilistic quantities. However, they often suffer from high variance, which can limit their efficiency—especially when studying **rare events**. This project explores three major **variance reduction methods** designed to improve precision and reduce computational cost:
 
-**Access the full report in English:**  
-➡️ [Variance Reduction Methods (PDF)](Variance_Reduction_Methods.pdf)
+1. **Importance Sampling**: Modifies the sampling distribution to better capture rare events;
+2. **Control Variates**: Leverages the correlation between random variables to reduce the estimator's variance;
+3. **Stratification**: Segments the sampling space into homogeneous groups to refine estimates. 
 
-## Code and Data  
-This project includes several **R** implementations (accessible via [this link](../src/)):
-- Estimation using **Control Variates**.
-- Estimation using **Stratification**.
-- Application to LOSC performance analysis using **Importance Sampling**.
+The theoretical approach is complemented by a **real-world application in sports analytics**, evaluating the probability of an exceptional scoreline in a LOSC Lille (French football club) match.
 
-The variances obtained from these methods are compared with the standard Monte Carlo approach.
+---
 
-**Dataset Used:**  
-Match data from LOSC over the last 20 seasons is available here:  
-➡️ [Check CSV Data](../data/LOSC.csv)
+## Resources
+
+The report covers the following topics:
+- Theoretical foundations of Monte Carlo simulations.
+- Detailed presentation of variance reduction techniques.
+- Mathematical proofs of fundamental properties.
+- Performance benchmarking of these methods on concrete cases.
+- Application to LOSC match data to estimate the probability of a victory by a margin of 8 goals or more.
+
+| Document | Language | Link |
+| :--- | :--- | :--- |
+| Technical Report | English | [View PDF](../docs/Monte-Carlo-Variance-Reduction.pdf) |
+| Technical Report | French | [Read PDF](../docs/Reduction-Variance-Monte-Carlo.pdf) |
+
+
+## Code and Data
+This project includes several **R** implementations (available in the [src/](../src/) directory):
+- Estimation using Control Variates.
+- Estimation using Stratification.
+- Applied analysis of LOSC performance via Importance Sampling.
+
+The variances associated with these methods are compared against the classic Monte Carlo approach.
+
+**Data Used:**  
+LOSC Lille match data (2005-2024), including goal difference calculations, can be accessed via the following link: [View CSV Data](../data/LOSC.csv)
+  
+
+## Installation and Usage
+
+To explore the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/rmdair/Monte-Carlo-Variance-Reduction.git
+
+# Navigate to the project directory
+cd Monte-Carlo-Variance-Reduction
+```
 
 ## References  
 - Rasmussen & Glynn, *Stochastic Simulation: Algorithms and Analysis*, Springer, 2009.  
 - Christian P. Robert & George Casella, *Monte Carlo Statistical Methods*, Springer, 2004.  
 - Rubinstein & Kroese, *Simulation and the Monte Carlo Method*, Wiley, 2016.  
-- *Pour la Science*, n°385, *Hasard et incertitude, les défis qu’ils posent*, November 2009.  
-
+- Pour la Science (Scientific American French Edition), No. 385, Hasard et incertitude, les défis qu’ils posent, November 2009.
