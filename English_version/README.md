@@ -1,7 +1,5 @@
 <h1 align="center">Variance Reduction in Monte Carlo Simulations</h1>
 
----
-
 <p align="center">
   <img src="https://img.shields.io/badge/R_Language-276DC3?style=flat-square&logo=R" alt="R">
   <img src="https://img.shields.io/badge/License-MIT-darkgreen?style=flat-square" alt="License">
@@ -32,8 +30,8 @@ The report covers the following topics:
 
 | Document | Language | Link |
 | :--- | :--- | :--- |
-| Technical Report | English | [View PDF](../docs/Monte-Carlo-Variance-Reduction.pdf) |
-| Technical Report | French | [Read PDF](../docs/Reduction-Variance-Monte-Carlo.pdf) |
+| Technical Report | English | [View PDF](../docs/Monte-Carlo-Variance-Reduction-EN.pdf) |
+| Technical Report | French | [Read PDF](../docs/Reduction-Variance-Monte-Carlo-FR.pdf) |
 
 
 ## Code and Data
